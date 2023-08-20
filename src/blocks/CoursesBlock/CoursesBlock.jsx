@@ -2,8 +2,6 @@ import Header from "./Header";
 import CoursesCard from "../../components/CoursesCard";
 import {coursesCard} from "../../constants";
 import UsefulInformationBlock from "./UsefulInformationBlock";
-import {forwardRef} from "react";
-
 
 const CoursesBlock = () => {
   return (
@@ -20,4 +18,4 @@ const CoursesBlock = () => {
   );
 };
 
-export default forwardRef (CoursesBlock);
+export default CoursesBlock;

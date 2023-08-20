@@ -29,4 +29,4 @@ const BlogBlock = () => {
   );
 };
 
-export default forwardRef (BlogBlock);
+export default BlogBlock;

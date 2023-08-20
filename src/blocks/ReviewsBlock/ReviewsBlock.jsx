@@ -1,7 +1,6 @@
 import {userReviews} from "../../constants";
 import SubscriptionBlock from "./SubscriptionBlock";
 import FaqBlock from "./FaqBlock";
-import {forwardRef} from "react";
 
 const ReviewsBlock = () => {
   return (
@@ -29,4 +28,4 @@ const ReviewsBlock = () => {
   );
 };
 
-export default forwardRef(ReviewsBlock);
+export default ReviewsBlock;

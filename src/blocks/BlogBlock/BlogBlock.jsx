@@ -1,6 +1,8 @@
 import {blockBlog} from "../../constants";
 import Footer from "./Footer/Footer";
-import {forwardRef} from "react";
+import wiring from '../../assets/images/wiring.png'
+import ventilation from '../../assets/images/ventilation.png'
+import plumbing from '../../assets/images/plumbing.png'
 
 const BlogBlock = () => {
   return (
@@ -13,7 +15,7 @@ const BlogBlock = () => {
       <div className='flex flex-row justify-between w-full gap-10'>
         {blockBlog.map((blog) =>
           <div className={blog.style} key={blog.id}>
-            <img className='h-[55%] w-full object-cover' src={blog.image} alt='фото'/>
+            <img className='h-[55%] w-full object-cover' src={blog.image === 'wiring' ? wiring : blog.image === 'ventilation' ? ventilation : plumbing} alt='фото'/>
             <div className={blog.styleTitle}>
               <p className='text-end text-[28px] border-b-2 border-regal-yellow py-2 '>{blog.title}</p>
             </div>

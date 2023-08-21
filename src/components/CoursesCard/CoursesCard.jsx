@@ -2,12 +2,15 @@ import buttomPlay from '../../assets/icons/buttomPlay.png'
 import calendar from '../../assets/icons/Calendar.png'
 import many from '../../assets/icons/schedule_FILL1_wght400_GRAD0_opsz48 1 (1).png'
 import clock from '../../assets/icons/schedule_FILL1_wght400_GRAD0_opsz48 1.png'
+import engineer from '../../assets/images/engineer.png'
+import carpenter from '../../assets/images/carpenter.png'
+import maintenance from '../../assets/images/maintenance.png'
 
 const CoursesCard = ({res}) => {
 
   return (
     <div className='w-1/3 shadow-md relative text-regal-black'>
-      <img className='w-full h-[400px] object-cover' src={res?.image} alt='engineer'/>
+      <img className='w-full h-[400px] object-cover' src={res.image === 'engineer' ? engineer : res.image === 'carpenter' ? carpenter : maintenance} alt='engineer'/>
       <img className='absolute top-1/4 left-0 right-0 m-auto cursor-pointer' src={buttomPlay} alt='buttomPlay'/>
       <p className='pl-10 w-full text-3xl my-2'>Курс {res.value}</p>
       <div className='w-3/5 border-b-[3px] border-regal-yellow'/>

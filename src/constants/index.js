@@ -1,9 +1,10 @@
+import CoursesBlock from "../blocks/CoursesBlock";
 
 export const navigationName = [
-  {id: 1, value: 'Курси'},
-  {id: 2, value: 'Про нас'},
-  {id: 3, value: 'Відгуки'},
-  {id: 4, value: 'Блог'},
+  {id: '1', value: 'Курси', name: 'courses'},
+  {id: '2', value: 'Про нас', name: 'header'},
+  {id: '3', value: 'Відгуки', name: 'reviews'},
+  {id: '4', value: 'Блог', name: 'blog'},
 ]
 
 export const wiringBlock = [

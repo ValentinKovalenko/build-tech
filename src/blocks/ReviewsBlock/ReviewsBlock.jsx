@@ -5,7 +5,7 @@ import Header from "../../components/Header";
 
 const ReviewsBlock = () => {
   return (
-    <div className='mt-24 text-regal-black'>
+    <div id='reviews' className='mt-24 text-regal-black'>
       <Header title='ВІДГУКИ'/>
       <div className='flex justify-between'>
         {userReviews.map((review) =>

@@ -5,7 +5,7 @@ import UsefulInformationBlock from "./UsefulInformationBlock";
 
 const CoursesBlock = () => {
   return (
-    <div className='mt-8'>
+    <div id='courses' className='mt-8'>
       <Header linkName='Дивитись всі' title='КУРСИ'/>
       <div className='flex flex-row justify-around w-full gap-10'>
         {coursesCard.map((res) => <CoursesCard key={res.id} res={res}/>)}

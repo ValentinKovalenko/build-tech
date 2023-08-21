@@ -6,7 +6,7 @@ import BottomBlock from "./BottomBlock";
 
 const AboutUsBlock = () => {
   return (
-    <div className='relative'>
+    <div id='header' className='relative'>
       <div className='image'>
         <div className='block-color relative'>
           <Menu />

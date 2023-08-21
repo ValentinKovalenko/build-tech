@@ -7,7 +7,7 @@ import Header from "../../components/Header";
 
 const BlogBlock = () => {
   return (
-    <div className='mt-32'>
+    <div id='blog' className='mt-32'>
       <Header title='БЛОГ'/>
       <div className='flex flex-row justify-between w-full gap-10'>
         {blockBlog.map((blog) =>

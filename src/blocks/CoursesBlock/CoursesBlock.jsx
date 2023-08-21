@@ -1,4 +1,4 @@
-import Header from "./Header";
+import Header from "../../components/Header";
 import CoursesCard from "../../components/CoursesCard";
 import {coursesCard} from "../../constants";
 import UsefulInformationBlock from "./UsefulInformationBlock";
@@ -6,7 +6,7 @@ import UsefulInformationBlock from "./UsefulInformationBlock";
 const CoursesBlock = () => {
   return (
     <div className='mt-8'>
-      <Header/>
+      <Header linkName='Дивитись всі' title='КУРСИ'/>
       <div className='flex flex-row justify-around w-full gap-10'>
         {coursesCard.map((res) => <CoursesCard key={res.id} res={res}/>)}
       </div>

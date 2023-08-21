@@ -8,7 +8,7 @@ const UsefulInformationBlock = () => {
 
   return (
     <div className='flex text-regal-black w-full mt-32'>
-      <div className='flex justify-end bg-regal-yellow w-[41%] py-8 pr-20'>
+      <div className='flex bg-regal-yellow w-[41%] pl-[10%] py-8 pr-20'>
         <div>
           <div className='flex items-center gap-2'>
             <img src={logo1} alt='логотип'/>

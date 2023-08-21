@@ -1,19 +1,16 @@
 import {userReviews} from "../../constants";
 import SubscriptionBlock from "./SubscriptionBlock";
 import FaqBlock from "./FaqBlock";
+import Header from "../../components/Header";
 
 const ReviewsBlock = () => {
   return (
     <div className='mt-24 text-regal-black'>
-      <div className='text-regal-black w-full py-4 pb-20'>
-        <div className='flex justify-end w-[23%] text-6xl border-b-[12px] border-regal-yellow'>
-          <span className='my-1'>ВІДГУКИ</span>
-        </div>
-      </div>
+      <Header title='ВІДГУКИ'/>
       <div className='flex justify-between'>
         {userReviews.map((review) =>
           <div className='w-[23%] p-8 border border-regal-black border-opacity-5' key={review.id}>
-            <p className='text-[28px]'>{review.name}</p>
+            <p className='text-[28px] my-2'>{review.name}</p>
             <div className='border-b-[3px] border-regal-yellow mb-3'/>
             <p className='text-lg'>{review.value}</p>
           </div>

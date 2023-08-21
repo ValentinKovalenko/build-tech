@@ -1,6 +1,7 @@
 import logo from '../../../assets/icons/Vector (1).png'
 import chat from '../../../assets/icons/chat_FILL1_wght300_GRAD0_opsz48 1.png'
-import {footerText} from "../../../constants";
+import {footerText, navigationName} from "../../../constants";
+import ScrollTo from "react-scroll-into-view";
 
 const Footer = () => {
   return (
@@ -16,10 +17,14 @@ const Footer = () => {
         </div>
         <div className='flex justify-between w-1/3 text-lg'>
           <div className='flex flex-col gap-2'>
-            <p>Курси</p>
-            <p>Про нас</p>
-            <p>Відгуки</p>
-            <p>Блог</p>
+            {navigationName.map((item) =>
+              <ScrollTo className='h-full' key={item.id} selector={`#${item.name}`}>
+                <button
+                  className='flex items-center gap-2 mx-6 h-full'>
+                  {item.value}
+                </button>
+              </ScrollTo>
+            )}
           </div>
           <div className='flex flex-col gap-2'>
             <p>Telegram</p>

@@ -1,5 +1,3 @@
-import CoursesBlock from "../blocks/CoursesBlock";
-
 export const navigationName = [
   {id: '1', value: 'Курси', name: 'courses'},
   {id: '2', value: 'Про нас', name: 'header'},
